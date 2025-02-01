@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 31, 2025, 1:43:59 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="in.co.rays.project_3.dto">
+	<class name="MedicationDTO" table="st_medication">
+		<id name="id" type="java.lang.Long">
+			<column name="ID"></column>
+			<generator class="increment"></generator>
+		</id>
+		<property name="fullName" type="java.lang.String">
+			<column name="FULLNAME" />
+		</property>
+		<property name="dosage" type="int">
+			<column name="DOSAGE" />
+		</property>
+		<property name="prescriptionDate" type="java.util.Date">
+			<column name="PRESCRIPTIONDATE" />
+		</property>
+		<property name="illness" type="java.lang.String">
+			<column name="ILLNESS" />
+		</property>
+	</class>
+</hibernate-mapping>
